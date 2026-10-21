@@ -1,0 +1,17 @@
+{
+  "name": "jungle-helper",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Overlay de ajuda para jungler no League of Legends (Live Client Data API)",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "demo": "electron . --demo",
+    "web": "node src/server.js",
+    "web:demo": "node src/server.js --demo",
+    "test": "node test/engine.test.mjs"
+  },
+  "devDependencies": {
+    "electron": "^44.9.2"
+  }
+}

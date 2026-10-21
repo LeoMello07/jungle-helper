@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https://ddragon.leagueoflegends.com data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com">
+<title>Jungle Helper</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="hud">
+    <section class="panel" id="p-obj" data-id="obj">
+      <header class="ph"><span>Objetivos</span><span class="clock" id="clock">--:--</span></header>
+      <div class="pb"></div>
+    </section>
+
+    <section class="panel" id="p-ss" data-id="ss">
+      <header class="ph"><span>Feitiços</span><span class="hint">Ctrl+Shift / Ctrl+Alt + 1‑5</span></header>
+      <div class="pb"></div>
+    </section>
+
+    <section class="panel" id="p-coach" data-id="coach">
+      <header class="ph"><span>Conselheiro</span><span class="side" id="side"></span></header>
+      <div class="pb">
+        <div class="coach-top">
+          <div id="minimap"></div>
+          <div id="lanes"></div>
+        </div>
+        <ol id="tips"></ol>
+        <div id="route"></div>
+      </div>
+    </section>
+
+    <section class="panel" id="p-build" data-id="build">
+      <header class="ph"><span id="build-title">Build</span><span class="hint">Ctrl+Shift+B</span></header>
+      <div class="pb"></div>
+    </section>
+  </div>
+
+  <div id="editbar">
+    <b>MODO EDIÇÃO</b> arraste os painéis pelo título · clique num feitiço para marcar · botão direito cancela
+    <span>Ctrl+Shift+0 volta pro jogo</span>
+  </div>
+  <div id="toast"></div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
