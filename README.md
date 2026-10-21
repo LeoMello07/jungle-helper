@@ -13,15 +13,6 @@ npm run web          # sem overlay: abra http://127.0.0.1:7878 num 2º monitor
 node src/server.js --lan   # idem, acessível pelo celular na mesma rede
 ```
 
-### Atalhos de um clique (Mac)
-
-```bash
-osacompile -o ~/Applications/"Abrir Jungle Helper.app" launchers/abrir.applescript
-osacompile -o ~/Applications/"Fechar Jungle Helper.app" launchers/fechar.applescript
-```
-
-Depois arraste os dois de `~/Applications` para o Dock. (Não deixe na Mesa se ela sincroniza com o iCloud.)
-
 No LoL, use o modo de janela **Sem moldura**: em tela cheia o jogo esconde o overlay.
 
 ## Atalhos (overlay)
